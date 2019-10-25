@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        ${data.map(boxer => `
+        <div class="col-md-4">
+            <div class="card">
+                <img src="${boxer.picture}" class="card-img-top" alt="..." height="auto" width="100%">
+                <div class="card-body">
+                    <h5 class="card-title">${boxer.name}</h5>
+                    <p>${boxer.weightclass}</p>
+                    <p class="card-text">${boxer.bio}<br>
+                        <!-- <div class="container-fluid">
+                            ${boxer.video}
+                        </div> -->
+                        <!-- ${boxer.trainer}<br> -->
+                        <!-- ${boxer.promoter}<br> -->
+                        <!-- ${boxer.country}<br> -->
+                        <!-- ${boxer.fightingstyle}<br> -->
+                        <!-- ${boxer.network}<br> -->
+                        <!-- ${boxer.weightclass}<br> -->
+                        <!-- ${boxer.beltnames}<br>${boxer.promoter}</p> -->
+                    <a href="/${boxer.id}" class="btn btn-danger">Review!</a>
+                </div>
+            </div>
+        </div>
+        `).join('')}
+    </div>
+</div>
