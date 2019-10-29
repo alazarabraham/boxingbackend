@@ -15,7 +15,7 @@ class User{
             const response = await db.one(
                 `SELECT id, first_name, last_name, password FROM boxinglogin WHERE email = $1;`,
                 [this.email_address]
-            );
+            ); 
             const isValid = this.checkPassword(response.password);
 
             if (!!isValid) {

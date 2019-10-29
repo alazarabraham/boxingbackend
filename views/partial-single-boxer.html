@@ -5,18 +5,32 @@
 
 
 </section> -->
+<div class="jumbotron" style="background: rgb(255, 198, 28);">
+    <h1 class="display-4">${data.name}</h1>
+    <p class="lead">${data.weightclass}</p>
+    
+  </div>
+
+
+  <div id="vid">${data.video} 
+
+
+  </div>
+  <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">${data.trainer}</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12">
             
-                <br>
-                ${data.name}
-                <br>
-                ${data.bio}
-                <br>
-                ${data.currentWeight}
-                <br>
-                ${data.video}
+            
+                
+               
                 <br>
                 ${data.trainer}
                 <br>
@@ -46,7 +60,10 @@
                 submit button
 
 
-                
+                <audio controls>
+                <source src="hanzz.mp3" type="audio/mp3">
+              </audio>
+
         </div>
     </div>
 </div>

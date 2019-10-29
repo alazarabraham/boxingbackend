@@ -21,7 +21,7 @@ router.get('/:boxer_id',async (req,res,next)=>{
   const theBoxer = await boxerModel.getById(boxer_id);
   res.render("template", {
     locals: {
-      title: "Boxers",
+      title: "",
       data: theBoxer
     },
     partials: {
