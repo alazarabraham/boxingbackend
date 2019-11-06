@@ -8,7 +8,7 @@ router.get('/', async (req, res, next) =>{
   const BoxerList = await boxerModel.getAll();
   res.render('template', {
   locals: {
-    title: 'Boss level boxers',
+    title: '',
     data: BoxerList
   },
   partials: {

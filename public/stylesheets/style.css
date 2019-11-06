@@ -4,15 +4,20 @@ body {
   background: rgb(0, 0, 0);
   text-align: center;
 }
+#jumbotron{
+  box-shadow: black;
+}
 
 #vid:hover{
-  text-align: center;
   border: rgb(255, 198, 28);
   border-width: thin;
   box-sizing: border-box;
   box-shadow: 0 3px 5px 0 rgba(0,0,0,0.08);
   transition: fade;
   border-style: solid;
-  background: rgb(239, 18, 255);
+  background: black;
 }
 
+img{
+  width: 250;
+}

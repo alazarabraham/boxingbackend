@@ -3,9 +3,9 @@ class Boxers {
     constructor(name, bio,currentWeight,picture,video,trainer,promoter,country,fightingStyle,network,weightclass,beltnames ) {
         this.name = name;
         this.bio = bio;
-        this.currentWeight;
-        this.picture;
-        this.video;
+        this.currentWeight = currentWeight;
+        this.picture =picture;
+        this.video =video;
         this.trainer;
         this.promoter;
         this.country;
